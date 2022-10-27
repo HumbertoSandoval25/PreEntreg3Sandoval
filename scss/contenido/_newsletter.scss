@@ -1,0 +1,25 @@
+.newsletter{
+    @include tablet{
+        grid-template-columns: 2fr 1fr;
+    }
+    @include desktop{
+        height: 70vh;
+    }
+    h1,h2{
+        font-size: 3rem;
+        color: $first-color;
+        line-height: 1;
+        margin: 2rem 0;
+    }
+}
+.newsletter__btn{
+    padding: 2.5rem;
+    border: none;
+    border-radius: 28px;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+}
+.newsletter__img{
+    width: 100%;
+    max-width: 40rem;
+}

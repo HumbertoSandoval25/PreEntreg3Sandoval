@@ -1,0 +1,60 @@
+.about{
+    @include desktop{
+        padding: 0 10rem;
+    }
+}
+.info{
+    text-align: center;
+}
+.cards{
+    grid-template-columns: 1fr;
+    @include tablet{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    i{
+        font-size: 4rem;
+        color: $first-color;
+    }
+
+    &:hover{
+        transform:scale(1.05)
+    }
+}
+.wrap{
+    @include tablet{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.perks-benefits__card{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    span{
+        font-weight: 700;
+    }
+    img{
+        width: 40%;
+        @include tablet{
+            width: 20%;
+        }
+    }
+    p{
+        width: 60%;
+        @include tablet{
+            width: 80%;
+        }
+    }
+}

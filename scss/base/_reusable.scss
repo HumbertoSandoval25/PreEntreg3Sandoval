@@ -1,0 +1,27 @@
+.container{
+    max-width: 100%;
+    margin: 0 2.4rem;
+}
+.section{
+    max-width: 100%;
+    padding: 2.4rem 0;
+}
+.article__author{
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    color: #7b7979;
+}
+.title{
+    color: var(--first-color);
+    text-align: center;
+    font-size: 1.5em;
+}
+.grid{
+    display: grid;
+    gap: 2rem;
+}
+.blue{
+    color: $first-color;
+    text-transform: uppercase;
+}

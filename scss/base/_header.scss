@@ -1,0 +1,47 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .nav__logo img{
+        width: 11rem;
+    }
+    .nav__menu{
+        display: none;
+
+        @include tablet{
+            display: block;
+            width: 50rem;
+        }
+
+        @include desktop{
+            margin-right: 4rem;
+        }
+    }
+    .menu-icon i{
+        font-size: 3rem;
+        cursor: pointer;
+        margin-right: 1.5rem;
+    }
+}
+
+.menu-icon{
+    @include tablet{
+        display: none;
+    }
+}
+.nav__list{
+    @include tablet{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav__item{
+        @include tablet{
+            color:$black-color;
+        }
+        &:hover{
+            color:$text-color-light;
+        }
+    }
+}

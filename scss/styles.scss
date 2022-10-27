@@ -1,0 +1,24 @@
+// BASE
+@import 'base/variables';
+@import 'base/base';
+@import 'base/reusable';
+@import 'base/mixins';
+@import 'base/header';
+@import 'base/footer';
+
+// PRINCIPAL
+@import 'contenido/banner';
+@import 'contenido/mainArticles';
+@import 'contenido/message';
+
+//ABOUT US
+@import 'contenido/about';
+
+// BLOG
+@import 'contenido/blog';
+
+// NEWSLETTER
+@import 'contenido/newsletter';
+
+// CONTACT
+@import 'contenido/contact';

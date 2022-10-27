@@ -1,0 +1,51 @@
+.articles{
+    display: flex;
+    flex-direction: column;
+
+    @include desktop{
+        display: grid;
+        grid-template-columns: 50% auto;
+        gap: 4rem;
+    }
+    @include wide{
+        padding: 5rem 10rem;
+    }
+}
+.article{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.article, .article__big{
+    margin-bottom: 2rem;
+}
+.article__big{
+    h2{
+        @include desktop{
+            font-size: 2.5rem;
+        }
+    }
+}
+.article__img{
+    width: 90%;
+    max-width: 30rem;
+}
+.article__info{
+    font-size: .8em;
+    h2{
+        @include tablet{
+            font-size:3.2rem;
+        }
+    }
+    h3{
+        @include tablet{
+            font-size: 2.2rem;
+        }
+    }
+    .article__description{
+        @include tablet{
+            margin-top: 1rem;
+            font-size: 1.3rem;
+        }
+    }
+}

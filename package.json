@@ -1,0 +1,23 @@
+{
+  "name": "pre-entrega3-sandoval",
+  "version": "1.0.0",
+  "description": "Pre entrega 3 Coder House, Uso de SASS y SEO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "SASS",
+    "SEO",
+    "CSS",
+    "HTML"
+  ],
+  "author": "Humberto Sandoval",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
