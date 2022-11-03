@@ -16,18 +16,22 @@
 .card{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 2rem;
+    padding: 3rem;
     border: 1px solid black;
     border-radius: 10px;
+    cursor: pointer;
 
     i{
-        font-size: 4rem;
+        font-size: 5rem;
         color: $first-color;
     }
-
+    h4{
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
     &:hover{
         transform:scale(1.05)
     }

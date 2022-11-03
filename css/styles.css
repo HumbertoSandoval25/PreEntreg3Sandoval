@@ -255,15 +255,19 @@ button {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem;
   border: 1px solid black;
-  border-radius: 10px; }
+  border-radius: 10px;
+  cursor: pointer; }
   .card i {
-    font-size: 4rem;
+    font-size: 5rem;
     color: #0780f1; }
+  .card h4 {
+    margin-top: 1rem;
+    font-size: 2rem; }
   .card:hover {
     transform: scale(1.05); }
 
@@ -340,6 +344,9 @@ button {
   .blog__cards {
     grid-template-columns: repeat(3, 1fr);
     padding: 0 10rem; } }
+
+.blog__cards img {
+  cursor: pointer; }
 
 .search-blog__form {
   position: relative;
